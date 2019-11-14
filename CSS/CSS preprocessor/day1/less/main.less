@@ -1,0 +1,59 @@
+@orange: orange;
+
+body{
+    color: @orange;
+}
+
+.at-content{
+    .at-content-text{
+        h1{
+            color: @orange;
+        }
+        p{
+            background-color: @orange;
+        }
+    }
+}
+
+.header nav{
+    ul {
+        display: table;
+
+        li {
+            display: inline;
+        }
+        
+        img{
+            display: inline;
+        }
+    }
+
+}
+
+.radius(@rad){
+    border-radius: @rad;
+    margin: @rad;
+}
+
+.btn{
+    background: navy;
+}
+
+.go-btn{
+    &:extend(.btn);
+    font-weight: bold;
+    .radius(20px);
+}
+
+.mixin-loop (@index) when (@index > 0) {
+    .tes-@{index}0 {
+        display: inline-block;
+        width: @index * 10%;
+        background-color: navy;
+        color: white;
+        margin: 2px 0;
+    }
+    .mixin-loop(@index - 1);
+ }
+
+.mixin-loop(3);

@@ -1,0 +1,106 @@
+//create
+//a
+db.supplier.insert({_id: 1 , name: "telkomsel"})
+db.supplier.insert({_id: 2, name: "indosat"})
+db.supplier.insert({_id: 3, name: "xl" })
+db.supplier.insert({_id: 4, name: "esia" })
+db.supplier.insert({_id: 5, name: "smartfren" })
+
+//b
+db.product_type.insert({_id: 1, name: "Data Internet" })
+db.product_type.insert({_id: 2, name: "Pulsa Pascabayar" })
+db.product_type.insert({_id: 3, name: "Pulsa Prabayar"})
+
+//c
+db.product.insert({_id: 1, product_type_id: 1, operator_id: 3, price: 20000, name: "Internet 1 minggu", status: 1})
+db.product.insert({_id: 2, product_type_id: 1, operator_id: 3, price: 60000, name: "Internet 1 bulan", status: 1})
+//d
+
+db.product.insert({_id: 3, product_type_id: 2, operator_id: 1, price: 20000, name: "Pulsa 1 minggu" , status: 1})
+db.product.insert({_id: 4, product_type_id: 2, operator_id: 1, price: 20000, name: "Pulsa 1 bulan" , status: 1})
+db.product.insert({_id: 5, product_type_id: 2, operator_id: 1, price: 20000, name: "Pulsa 2 bulan" , status: 1})
+db.product.insert({_id: 6, product_type_id: 3, operator_id: 4, price: 25000, name: "Pulsa 20000" , status: 1})
+db.product.insert({_id: 7, product_type_id: 3, operator_id: 4, price: 52000, name: "Pulsa 50000" , status: 1})
+db.product.insert({_id: 8, product_type_id: 3, operator_id: 4, price: 100000, name: "Pulsa 100000" , status: 1})
+
+//e
+db.product_description.insert({_id: 1, description: 'ini internet buat 1 minggu'})
+db.product_description.insert({_id: 2, description: 'ini internet buat 1 bulan'})
+db.product_description.insert({_id: 3, description: 'ini pulsa buat 1 minggu bayar nanti'})
+db.product_description.insert({_id: 4, description: 'ini pulsa buat 1 bulan bayar nanti'})
+db.product_description.insert({_id: 5, description: 'ini pulsa buat 2 bulan bayar nanti'})
+db.product_description.insert({_id: 6, description: 'ini pulsa 20.000 maksimal buat 1 bulan'})
+db.product_description.insert({_id: 7, description: 'ini pulsa 50.000 maksimal buat 1 bulan'})
+db.product_description.insert({_id: 8, description: 'ini pulsa 100.000 maksimal buat 1 bulan'})
+
+//f
+db.payment_methods.insert({_id: 1, name: 'tunai', status: 1})
+db.payment_methods.insert({_id: 2, name: 'debit', status: 1})
+db.payment_methods.insert({_id: 3, name: 'kredit', status: 1})
+
+//g
+db.users.insert({_id: 1, status: 1, gender: 'm', name: 'Syamsul'})
+db.users.insert({_id: 2, status: 1, gender: 'f', name: 'Arifin'})
+db.users.insert({_id: 3, status: 1, gender: 'm', name: 'Muhammad'})
+db.users.insert({_id: 4, status: 1, gender: 'm', name: 'Udin'})
+db.users.insert({_id: 5, status: 1, gender: 'f', name: 'Fikri'})
+
+//h
+db.transactions.insert(
+    [{_id: 1, user_id: 1 ,payment_method_id: 1 ,status: 1,total_qty: 1, total_price: 20000},
+    {_id: 2, user_id: 1 ,payment_method_id: 2 ,status: 1,total_qty: 1, total_price: 60000},
+    {_id: 3, user_id: 1 ,payment_method_id: 3 ,status: 1,total_qty: 1, total_price: 60000},
+    {_id: 4, user_id: 2 ,payment_method_id: 1 ,status: 1,total_qty: 2, total_price: 160000},
+    {_id: 5, user_id: 2 ,payment_method_id: 2 ,status: 1,total_qty: 2, total_price: 20000},
+    {_id: 6, user_id: 2 ,payment_method_id: 3 ,status: 1,total_qty: 2, total_price: 160000},
+    {_id: 7, user_id: 3 ,payment_method_id: 1 ,status: 1,total_qty: 3, total_price: 172000},
+    {_id: 8, user_id: 3 ,payment_method_id: 2 ,status: 1,total_qty: 3, total_price: 180000},
+    {_id: 9, user_id: 3 ,payment_method_id: 3 ,status: 1,total_qty: 3, total_price: 60000},
+    {_id: 10, user_id: 4 ,payment_method_id: 1 ,status: 1,total_qty:2 , total_price: 80000},
+    {_id: 11, user_id: 4 ,payment_method_id: 2 ,status: 1,total_qty:2 , total_price: 40000},
+    {_id: 12, user_id: 4 ,payment_method_id: 3 ,status: 1,total_qty:2 , total_price: 50000},
+    {_id: 13, user_id: 5 ,payment_method_id: 1 ,status: 1,total_qty:1 , total_price: 20000},
+    {_id: 14, user_id: 5 ,payment_method_id: 2 ,status: 1,total_qty:1 , total_price: 60000},
+    {_id: 15, user_id: 5 ,payment_method_id: 3 ,status: 1,total_qty:1 , total_price: 25000},]
+
+)
+
+//i
+db.transaction_details.insert(
+    [{transaction_id:  1, product_id: 1, status: 1, qty: 1},
+    {transaction_id:  2, product_id: 4, status: 1, qty: 1},
+    {transaction_id:  3, product_id: 2, status: 1, qty: 1},
+    {transaction_id:  4, product_id: 2, status: 1, qty: 1},
+    {transaction_id:  4, product_id: 8, status: 1, qty: 1},
+    {transaction_id:  5, product_id: 4, status: 1, qty: 1},
+    {transaction_id:  5, product_id: 3, status: 1, qty: 1},
+    {transaction_id:  6, product_id: 5, status: 1, qty: 1},
+    {transaction_id:  6, product_id: 2, status: 1, qty: 1},
+    {transaction_id:  7, product_id: 7, status: 1, qty: 1},
+    {transaction_id:  7, product_id: 2, status: 1, qty: 2},
+    {transaction_id:  8, product_id: 8, status: 1, qty: 1},
+    {transaction_id:  8, product_id: 2, status: 1, qty: 1},
+    {transaction_id:  9, product_id: 3, status: 1, qty: 1},
+    {transaction_id:  9, product_id: 1, status: 1, qty: 3},
+    {transaction_id: 10, product_id: 1, status: 1, qty: 1},
+    {transaction_id: 10, product_id: 2, status: 1, qty: 1},
+    {transaction_id: 11, product_id: 3, status: 1, qty: 2},
+    {transaction_id: 12, product_id: 6, status: 1, qty: 2},
+    {transaction_id: 13, product_id: 1, status: 1, qty: 1},
+    {transaction_id: 14, product_id: 2, status: 1, qty: 1},
+    {transaction_id: 15, product_id: 6, status: 1, qty: 1},]
+)
+
+//read
+db.users.find({gender: 'm'}).pretty()
+db.product.find({product_type_id :3}).pretty()
+db.users.find({gender: 'f'}).count()
+db.users.find().sort({name: 1}).pretty()
+db.product.find({product_type_id :3}).limit(5).pretty()
+
+//update
+db.product.update({_id: 1}, {_id: 1, product_type_id: 1, operator_id: 3, price: 20000, name: "product dummy", status: 1} )
+db.transaction_details.update({product_id: 1},{$set:{qty: 3}},{multi:true})
+
+//delete
+db.product.remove({_id:1})

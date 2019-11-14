@@ -1,0 +1,48 @@
+body {
+  color: orange;
+}
+.at-content .at-content-text h1 {
+  color: orange;
+}
+.at-content .at-content-text p {
+  background-color: orange;
+}
+.header nav ul {
+  display: table;
+}
+.header nav ul li {
+  display: inline;
+}
+.header nav ul img {
+  display: inline;
+}
+.btn,
+.go-btn {
+  background: navy;
+}
+.go-btn {
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 20px;
+}
+.tes-30 {
+  display: inline-block;
+  width: 30%;
+  background-color: navy;
+  color: white;
+  margin: 2px 0;
+}
+.tes-20 {
+  display: inline-block;
+  width: 20%;
+  background-color: navy;
+  color: white;
+  margin: 2px 0;
+}
+.tes-10 {
+  display: inline-block;
+  width: 10%;
+  background-color: navy;
+  color: white;
+  margin: 2px 0;
+}

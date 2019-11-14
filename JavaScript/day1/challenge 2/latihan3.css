@@ -1,0 +1,49 @@
+.align-center{
+    text-align: center;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.box{
+    background-color: pink;
+    height: 480px;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+.red{
+    color: red;
+    padding-top: 5px;
+}
+
+.center-horizontal{
+    margin: 0px auto;
+}
+
+.long-input{
+    width: 100%;
+}
+
+.box-form{
+    height: 20%;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+.bold-marun{
+    color: rgb(85, 10, 10);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.submit-button{
+    height: 10%;
+    width: 20%;
+    margin:0px auto;
+    padding: 20px 0px;
+}

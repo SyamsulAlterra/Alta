@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div>
+        <h1>Buat Account Baru!</h1>
+        <h2>Sign Up Form</h2>
+    </div>
+
+    <div>
+        <form action="welcome.html">
+            First Name:<br>
+            <input type="text" name="firstName" required><br>
+            Last Name: <br>
+            <input type="text" name="lastName" required><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="male" checked>Male<br>
+            <input type="radio" name="gender" value="female">Female <br>
+            <input type="radio" name="gender" value="other">Other <br>
+            Nationality: <br>
+            <select name="nationality" id="nat" required>
+                <option value="malaysia">Malaysia</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="thailand">Thailand</option>
+                <option value="singapore">Singapore</option>
+            </select> <br>
+            Language Spoken: <br>
+            <input type="checkbox" name="language" value="indonesia"> Indonesia <br>
+            <input type="checkbox" name="language" value="melayu"> Melayu <br>
+            <input type="checkbox" name="language" value="tagalog"> Tagalog <br>
+            <input type="checkbox" name="language" value="english"> English <br>
+            <input type="checkbox" name="language" value="other"> Other <br>
+            Bio: <br>
+            <textarea name="biography" id="bio" cols="30" rows="10">Please inform us about you here</textarea> <br>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+</body>
+</html>

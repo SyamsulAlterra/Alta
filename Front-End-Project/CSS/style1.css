@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+.float-right{
+    text-align: right;
+}
+
+.aboutme{
+    background-color: #F4F7FC;
+    height: 132px;
+}
+
+.pageSekarang{
+    color: #F47522 !important;
+}
+
+.toppage{
+    height: 88.9px;
+}
+
+.alterrabawah{
+    background-color: #19345E;  
+    /* width: 1300px; */
+    /* height: 141.11px; */
+}
+
+.AlterraBawah{
+    background-position: 0px;
+}
+
+.wordtopright li{
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: 300;     
+    color: #19345E;
+    display: inline;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.wordtopright{
+    padding-top: 20px;
+}
+
+/* hover untuk mewarnai link yang di tunjuk */
+.wordtopright a li:hover{
+    color: #F47522;
+    font-family: 'Muli';
+    font-weight: bold;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.background2 h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #19345E;
+}
+
+.header-logo img{
+    width: 133px;
+    height: 66px;
+    margin: 5px;
+}
+
+.float-right {
+    font-weight: 400;
+}
+
+.AlterraBawah img{
+    width: 109.54px;
+    opacity: 100%;
+    margin: 30px;
+    padding-top: 10px; 
+}
+
+.AlterraBawah{
+    padding-left: 30px;
+}
+
+/* .imagePicture .image1 img{
+    height: 248px;
+    border-radius: 5%;
+    margin-left: 40px;
+}
+
+.imagePicture .image2 img{
+    width: 89.79px;
+    height: 75.88px;
+    margin-bottom: 100px;
+} */
+
+.imagePicture .image1{
+    /* width: 249px; */
+    height: 75px;
+    margin-left: 70px;
+    margin-top: 140px;
+    position: relative;
+    top: 60px;
+    right: -42px;
+}
+
+.imagePicture .image2{
+    /* width: 89.79px; */
+    height: 248px;
+    border-radius: 5%;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    /* kalau ada position bisa gunakan right top dll. */
+    position: absolute;   
+}
+
+.SettingRow3{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.content-paragraph p{
+    font-family: 'Roboto', sans-serif;
+    color: #19345E;
+}
+
+.socialmedia p{
+    font-family: sans-serif;
+    font-weight: 400; 
+    color: #FFFFFF;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    padding-left: 7px;
+}
+
+.socialmedia img{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.copyright{
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.table td{
+    text-align: center;
+    color: #19345E;
+    /* posisi teks */
+}
+
+.vl{
+    margin-top: 10px;
+    border-right: 2px solid darkblue;
+    height: 110px;
+}
+.topnav .icon {
+    display: none;}
+
+.mobile {
+    display: none;
+}
+@media(max-width: 768px){
+    .wordtopright{
+        display: initial;
+    }
+    .copyright {padding: 0;}
+    .background2 h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #19345E;
+    }
+    .imagePicture .image1{
+    /* width: 249px; */
+        height: 75px;
+        margin-left: 70px;
+        margin-top: 140px;
+        position: relative;
+        top: 16px;
+        right: 33px;
+    }
+
+    .wordtopright li{
+        text-align: right;
+    }
+
+    .imagePicture .image2{
+        /* width: 89.79px; */
+    /* width: 89.79px; */
+        border-radius: 5%;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    /* position: absolute; */
+        left: 95px;
+        height: 200px;
+    }
+
+    .vl{
+        border: none;
+        text-align: center;
+    }
+    
+    .AlterraBawah{
+        text-align: center;
+    }
+
+    footer{
+        background-color: #19345E;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    @media screen and (max-width: 728px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;   
+        }
+      }
+      
+    @media screen and (max-width: 728px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          /* position: relative; */
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .topnav{
+            padding-left: 202px;
+            position: relative;
+            right: 2px;
+            top: -64px;
+        }
+        .topnav.responsive a{
+          font-family: 'Muli', sans-serif;
+          float: none;
+          display: block;
+          text-align: right;
+        }
+
+        .wordtopright a li:hover{
+            color: #F47522;
+            font-family: 'Muli';
+            font-weight: bold;
+        }
+
+      }
+}

@@ -1,0 +1,81 @@
+.header-bg {
+  background-color: #c2c2c2;
+}
+.header-bg .menu-item-list {
+  padding: 0px 10px;
+  font-size: 15px;
+}
+.header-bg .header-logo {
+  height: 60px;
+  width: 60px;
+}
+.header-bg .table-center {
+  margin: 0px auto;
+  padding: 5px 0px;
+  vertical-align: middle;
+}
+.header-bg .height100 {
+  height: 100%;
+}
+.header-bg .input-header {
+  width: 385px;
+}
+.header-bg .search img {
+  height: 25px;
+}
+.header-bg .lainnya {
+  background-color: #c2c2c2 !important;
+}
+.header-bg .lainnya:hover {
+  text-decoration: none;
+}
+.header-bg .lainnya:focus {
+  border: 0px solid white;
+}
+.blank {
+  height: 20px;
+}
+.berita-terkini-bar {
+  background-color: orange;
+  width: 100% !important;
+}
+.berita-terkini-bar .align-left {
+  text-align: left;
+  padding: 10px;
+}
+.berita-terkini-bar .align-right {
+  text-align: right;
+  padding: 10px;
+}
+.berita-terkini {
+  height: 85px;
+  width: 100% !important;
+  background-color: grey;
+  border: solid black 1px;
+}
+.berita-terkini .text {
+  padding: 3px 6px;
+}
+.headline .photo {
+  text-align: center;
+}
+.headline .photo img {
+  width: 80%;
+}
+.headline .title {
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+}
+.headline .title p {
+  text-align: left;
+}
+.headline .feedback table {
+  width: 100%;
+}
+.headline .feedback table img {
+  width: 20px;
+}
+.red {
+  font-weight: bold;
+}

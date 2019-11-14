@@ -1,0 +1,101 @@
+/* body css */
+canvas{
+    height: 700px;
+    width: 100%;
+}
+
+.sky{
+    height: 445px;
+    width: 100%;
+    background-color: rgb(145, 145, 202);
+}
+
+.land{
+    position: relative;
+    background-color: green;
+    height: 150px;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/18/1c/d9/181cd9132f3c1c96d5beb322932add06.jpg");
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.align-center{
+    text-align: center;
+}
+
+/* mario css */
+#mario{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 50%;
+    left: 20px;
+    bottom: 0px;
+}
+
+/* obstacle css */
+.kotak-A{
+    height: 350px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+
+.kotak-B{
+    height: 100px;
+    width: 50px;
+    background-color: purple;
+    position: absolute;
+    left: 500px;
+    bottom: 0px;
+}
+
+.kotak-C{
+    height: 100px;
+    width: 50px;
+    background-color: purple;
+    position: absolute;
+    left: 1000px;
+    bottom: 50px;
+}
+
+.koin{
+    background-color: gold;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 1000px;
+    bottom: 0px;
+    border-radius: 50%;
+}
+
+.lubang{
+    background-color:rgb(145, 145, 202);
+    height: 20px;
+    width: 20px;
+    margin: 5px auto;
+    
+    /* left: 0px;
+    bottom: 0px; */
+    border-radius: 50%;
+}
+
+.musuh{
+    background-color: black;
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    opacity: 0;
+}
